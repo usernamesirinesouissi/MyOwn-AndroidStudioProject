@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".AddProfil">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="100dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/tvlistpro_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:text="Add Profil"
+            android:textAlignment="center"
+            android:textColor="@color/purple"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edfirstname_add"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Name"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edLastname_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Lastname"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/ednum_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Number"
+            android:inputType="phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <Button
+                android:id="@+id/btnsave_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#2E8531"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/btncancel_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#F61707"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/btnback_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#2196F3"
+                android:text="Back" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</LinearLayout>
